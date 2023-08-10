@@ -1,17 +1,21 @@
 #include <stdio.h>
-
 /**
- * main - main funciton of program
+ * main - A program that prints the size of various comput
  *
- * Return: 0 on success
+ * Return 0 (success)
  */
-
 int main(void)
-{
-	printf("Size of a char: %lu byte(s)", sizeof(char));
-	printf("Size of int: %lu byte(s)", sizeof(int));
-	printf("size of a long int: %lu byte(s)", sizeof(long int));
-	printf("size of a long long int: %lu byte(s)", sizeof(long long int));
-	printf("size of a float: %lu byte(s)", sizeof(float));
-	return (0);
+{	
+	char a;
+	int b;
+	long int c;
+	long long int d;
+	float f;
+
+printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(a));
+printf("Size of int: %lu byte(s)\n", (unsigned long)sizeof(b));
+printf("size of a long int: %lu byte(s)\n", (unsigned long)sizeof(c));
+printf("size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(d));
+printf("size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+return (0);
 }	
