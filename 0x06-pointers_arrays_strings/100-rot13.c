@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * rot13 - encode string using the rot13 encoding scheme
@@ -23,5 +24,5 @@ char *rot13(char *s)
 			}
 		}
 	}
-	return(0);
+	return (s);
 }
